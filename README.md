@@ -47,6 +47,3 @@ Sizing is based on Indian standard (IS) current-carrying capacities for FRLS (Fl
 Rates are based on late 2025 Pune market averages (Finolex/Polycab/RR Kabel):
 - **Labor**: ₹15 per meter.
 - **Material**: Ranging from ₹20/m (1.5mm) to ₹200+/m (16mm).
-
----
-*Created with ⚡ by Antigravity*
