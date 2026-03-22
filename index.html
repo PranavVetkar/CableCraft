@@ -1,28 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Electrical Wiring Assistant</title>
+  <title>Design Assistant ⚡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
   <div class="container">
-    <h1>Electrical Wiring Assistant ⚡</h1>
+    <header>
+      <h1>Design Assistant ⚡</h1>
+    </header>
 
-    <div class="input-section">
-      <label for="numRooms">Number of Rooms:</label>
-      <input type="number" id="numRooms" min="1" placeholder="e.g. 3" />
-      <button onclick="generateRoomInputs()">Add Rooms</button>
-    </div>
+    <main>
+      <section class="setup-section">
+        <div class="input-group">
+          <label for="numRooms">Number of Rooms</label>
+          <input type="number" id="numRooms" min="1" placeholder="3" />
+          <button onclick="generateRoomInputs()">
+            <span>Add Rooms</span>
+          </button>
+        </div>
+      </section>
 
-    <div id="roomsContainer"></div>
+      <section id="roomsContainer" class="rooms-grid"></section>
 
-    <button id="calculateBtn" onclick="calculateLoad()">Calculate Load</button>
+      <section class="actions">
+        <button id="calculateBtn" onclick="calculateLoad()">
+          Calculate Load & Suggest Wire
+        </button>
+      </section>
 
-    <div id="output"></div>
+      <section id="output"></section>
+    </main>
   </div>
 
   <script src="script.js"></script>
 </body>
+
 </html>
